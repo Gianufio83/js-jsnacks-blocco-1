@@ -3,19 +3,34 @@
 // un numero, se è dispari inseriscilo nell’array.
 
 var arrayNumeri = [];
-for (var i = 0; i <= 6; i++) {
+console.log(arrayNumeri);
+for (var i = 1; i <= 6; i++) {
   var numeroUtente = parseInt(prompt('Inserisci un numero'));
   console.log(numeroUtente);
   // se non è un numero glielo richiedo
-  while (isNan(numeroUtente)){
-    numeroUtente = parseInt(prompt('Non hai inserito un numero'));
-  }
-  if (numeroUtente % 2 != 0) {
-    console.log('dispari', numeroUtente);
-    arrayNumeri.push(numeroUtente)
+  // while (isNan(numeroUtente)) {
+  //   numeroUtente = parseInt(prompt('Inserisci un numero e non altro'));
+  // }
+  if (numeroUtente % 2 != 0){
+    arrayNumeri.push(numeroUtente);
   }
 }
 console.log(arrayNumeri);
+
+// var arrayNumeri = [];
+// for (var i = 0; i <= 6; i++) {
+//   var numeroUtente = parseInt(prompt('Inserisci un numero'));
+//   console.log(numeroUtente);
+//   // se non è un numero glielo richiedo
+//   while (isNan(numeroUtente)){
+//     numeroUtente = parseInt(prompt('Non hai inserito un numero'));
+//   }
+//   if (numeroUtente % 2 != 0) {
+//     console.log('dispari', numeroUtente);
+//     arrayNumeri.push(numeroUtente)
+//   }
+// }
+// console.log(arrayNumeri);
 
 // con il while
 // var arrayNumeri = [];
